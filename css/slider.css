@@ -1,0 +1,24 @@
+.swiper-button-prev::after{
+    font-size: 25px;
+}
+
+.swiper-button-next::after{
+    font-size: 25px;
+}
+
+.swiper-button-next{
+    color: #336a29;
+}
+
+.swiper-button-prev{
+    color: #336a29;
+}
+
+.swiper-pagination-bullet{
+    background-color: #c1d95c;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #336a29;
+}
