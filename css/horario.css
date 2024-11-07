@@ -1,0 +1,30 @@
+.horario{
+    padding: 100px 0px;
+    
+}
+
+.horario-info h2{
+    font-size: 75px;
+    color: #336a29;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: 0 0 10px #ffffff63;
+    margin-bottom: 50px;
+
+}
+
+.txt-horario{
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+    
+}
+
+.txt p{
+    
+    margin-bottom: 15px;
+}

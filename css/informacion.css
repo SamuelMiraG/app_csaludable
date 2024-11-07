@@ -1,0 +1,27 @@
+.info{
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.info-img{
+    width: 50%;
+}
+
+.info-img img{
+    width: 500px;
+    height: 250px;
+}
+
+.info-text{
+    width: 50%;
+}
+
+.info-text h2{
+    font-size: 75px;
+    color: #336a29;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: 0 0 10px #ffffff63;
+}
