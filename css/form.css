@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Varela Round", sans-serif;
+
+
+}
+
+.form-container{
+    height: 100vh;
+    background-color: #c1d95c;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.form-info-singup{
+    width: 400px;
+    height: 420px;
+    background-color: #498428;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ffffffb2;
+    color:  aliceblue;
+    text-transform: uppercase;
+
+}
+
+.form-info-login{
+    width: 380px;
+    height: 320px;
+    background-color: #498428;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ffffffb2;
+    color:  aliceblue;
+    text-transform: uppercase;
+
+}
+
+input{
+    width: 80%;
+    height: 35px;
+    margin: 10px;
+    border: 0;
+    box-shadow: 0 0 10px #335c4463;
+    border-radius: 15px;
+    outline: none;
+}
+
+
+
+.btn {
+
+    width: 50%;
+    height: 35px;
+    background-color: #eaef9d;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+    
+}
+
+.btn:hover{
+    background-color: #ffffffe0;
+}
+
+input::placeholder{
+    font-family: "Varela Round", sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #81ff38ee;
+
+    
+}
+
+

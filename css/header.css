@@ -28,7 +28,7 @@
 }
 
 .logos2{
-    margin-left: -20px;
+    margin-left: -50px;
     width: 180px;
     height: 180px;
 }
@@ -86,6 +86,50 @@
 .menu label{
     cursor: pointer;
     display: none;
+}
+
+@media(max-width: 991px) {
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .menu2{
+        display: none;
+    }
+
+    .logos1{
+        width: 120px;
+        height: 120px;
+    }
+
+    .logos2{
+        width: 0px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #336a297c;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+
+    }
+
+    #menu:checked~ .navbar{
+        display: initial;
+    }
+
+    
 }
 
 
