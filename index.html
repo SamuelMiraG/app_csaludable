@@ -15,71 +15,36 @@
     <link rel="stylesheet" href="./css/informacion.css">
     <link rel="stylesheet" href="./css/horario.css">
     <link rel="stylesheet" href="./css/footer.css">
-  </head>
+    
   <body>
     <div class="container-t">
      <header>
+
       <div class="menu container">
-        <img
-          class="logos1"
-          src="./img/logo.png"
-          alt=""
-          width="200"
-          height="200"
-        />
-        <input type="checkbox" id="menu" />
+        <img src="./img/logo.png" class="logo" alt="">
+        
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="./img/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="#">productos</a></li>
+                    <li><a href="#">horario</a></li>
+                    <li><a href="#">sobre nosotros</a></li>
+                    <li><a id="login2" href="login.html" >login</a></li>
+                    <li><a id="signup2" href="signup.html" >signup</a></li>
+                    <button id="logout" style="display: none;">Cerrar Sesión</button>
 
-        <label for="menu">
-          <img src="./img/menu.png" class="menu-icono" alt="" />
-        </label>
+                </ul>
 
-        <nav class="navbar">
-          <div class="menu1">
-            <ul>
-              <li><a href="login.html">login</a></li>
-              <li><a href="singup.html">sing up</a></li>
-              <li><a href="">productos</a></li>
-              <li><a href="">sobre nosotros</a></li>
-              
-            </ul>
-          </div>
-          <img
-            class="logos2"
-            src="./img/logo.png"
-            alt=""
-            width="200"
-            height="200"
-          />
-
-          <div class="menu2">
-            <ul>
-              <li><a href="">Horario</a></li>
-            </ul>
-
-           <div class="rsociales">
-             <a href="">
-              <div class="social">
-                <img src="./img/s1.svg" alt="" />
-              </div>
-             </a>
-
-             <a href="">
-              <div class="social">
-                <img src="./img/s2.svg" alt="" />
-              </div>
-             </a>
-
-              <a href="">
-              <div class="social">
-                <img src="./img/s3.svg" alt="" />
-              </div>
-             </a>
-           </div>
-         </div>
-        </nav>
+            </nav>
       </div>
 
+      
+      
+
       <div class="cont-header">
+        <h2 id="mensaje" class="saludo"></h2>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -782,5 +747,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
