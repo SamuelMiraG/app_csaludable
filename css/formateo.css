@@ -18,3 +18,28 @@ body{
     margin: 0 auto;
 
 }
+
+
+.pide-ya {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #25D366; 
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+    text-transform: uppercase;
+}
+
+.pide-ya .mensaje {
+    margin-right: 10px; 
+}
+
+.whatsapp-logo {
+    width: 40px;
+    height: auto; 
+}

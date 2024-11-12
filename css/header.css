@@ -24,16 +24,18 @@
 }
 
 
-#logout {
-    display: none;
-    margin: 17px;
-    background-color: rgba(240, 248, 255, 0.041);
-    border: none;
-    
+#logout{
     cursor: pointer;
-    
-    
+    border: 1px solid rgba(240, 248, 255, 0.753);
+    border-radius: 50px;
+    color: red;
+    background-color: rgba(240, 248, 255, 0.514);
 }
+
+#logout:hover{
+    background-color: aliceblue;
+}
+
 
 
 .menu{
@@ -69,7 +71,7 @@
 
 }
 
-.menu .navbar ul li a{
+.menu .navbar ul li a {
     font-size: 16px;
     padding: 20px;
     color: aliceblue;
@@ -82,7 +84,7 @@
 }
 
 .menu .navbar ul li a:hover{
-    color: brown;
+    color: rgb(7, 196, 0);
 }
 
 #menu{
@@ -108,9 +110,23 @@
 
     }
     .logo{
-        width: 150px;
+        width: 130px;
         margin-left: 13px;
     }
+
+    #logout{
+        cursor: pointer;
+        border: 1px solid rgba(240, 248, 255, 0);
+        border-radius: 50px;
+        color: red;
+        background-color: rgba(240, 248, 255, 0);
+    }
+    
+    #logout:hover{
+        color: rgb(236, 100, 100);
+        background-color: rgba(240, 248, 255, 0);
+    }
+
     .menu{
         padding: 20px;
         background: #80b15500;
@@ -139,6 +155,8 @@
     #menu:checked~ .navbar{
         display: initial;
     }
+
+    
 
 }
 

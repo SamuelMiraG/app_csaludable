@@ -23,25 +23,26 @@ body{
 
 .form-info-singup{
     width: 400px;
-    height: 420px;
-    background-color: #498428;
+    height: 515px;
+    background-color: #93c477;
     border-radius: 15px;
     box-shadow: 0 0 20px #ffffffb2;
-    color:  aliceblue;
+    color:  rgb(0, 0, 0);
     text-transform: uppercase;
 
 }
 
 .form-info-login{
     width: 380px;
-    height: 320px;
-    background-color: #498428;
+    height: 400px;
+    background-color: #93c477;
     border-radius: 15px;
     box-shadow: 0 0 20px #ffffffb2;
-    color:  aliceblue;
+    color:  rgb(0, 0, 0);
     text-transform: uppercase;
 
 }
+
 
 input{
     width: 80%;
@@ -64,13 +65,13 @@ input{
     text-transform: uppercase;
     font-family: "Varela Round", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     
     
 }
 
 .btn:hover{
-    background-color: #ffffffe0;
+    color: #0d9c00e0;
 }
 
 input::placeholder{
@@ -80,9 +81,12 @@ input::placeholder{
 
 a {
     text-decoration: none;
-    color: #81ff38ee;
+    color: #22411c;
+    font-weight: 700;
+}
 
-    
+a:hover{
+    color: #0d9c00e0;
 }
 
 
