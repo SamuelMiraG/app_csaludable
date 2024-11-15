@@ -43,3 +43,32 @@ body{
     width: 40px;
     height: auto; 
 }
+  
+
+@media(max-width: 991px) {
+    .pide-ya{
+
+        width: 100px;
+        height: 50;
+    }
+
+    .whatsapp-logo {
+        width: 30px;
+        height: auto;
+    }
+
+    .pide-ya .mensaje {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+
+         
+
+        
+
+            
+
+    
+
+}
