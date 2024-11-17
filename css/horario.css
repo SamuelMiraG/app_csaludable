@@ -28,3 +28,24 @@
     
     margin-bottom: 15px;
 }
+
+@media(max-width: 991px){
+    .horario{
+        padding: 30px;
+        text-align: center;
+    }
+    .horario-info h2{
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .txt-horario{
+        flex-direction: column;
+    }
+    .rsociales{
+        justify-content: center;
+    }
+    .social img{
+        margin: 8px 0 0 0;
+
+    }
+}

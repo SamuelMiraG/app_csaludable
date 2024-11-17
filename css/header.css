@@ -38,8 +38,8 @@
 
 
 
-.menu{
-    position: absolute;
+.menu {
+    position: relative; /* Cambiado de absolute a relative para mejor control en móviles */
     top: 20px;
     left: 0;
     right: 0;
@@ -49,26 +49,23 @@
     z-index: 1000;
     background-color: #8fd452d8;
     height: 140px;
-    
-
+    padding: 0 20px; /* Agregado padding para espacio en los lados */
 }
 
-.logo{
+.logo {
     width: 180px;
-    margin-left: 75px;
     margin-top: 25px;
-
 }
 
-.menu .navbar ul{
+.menu .navbar ul {
     list-style: none;
-
+    padding: 0; /* Eliminar padding por defecto */
+    margin: 0; /* Eliminar margin por defecto */
 }
 
-.menu .navbar ul li{
+.menu .navbar ul li {
     position: relative;
-    float: left;
-
+    float: left; /* Mantener el diseño en escritorio */
 }
 
 .menu .navbar ul li a {
@@ -78,86 +75,88 @@
     display: block;
     text-transform: uppercase;
     margin-right: 50px;
-    margin-bottom: 2px;
-    
-
 }
 
-.menu .navbar ul li a:hover{
+.menu .navbar ul li a:hover {
     color: rgb(7, 196, 0);
 }
 
-#menu{
+#menu {
     display: none;
 }
 
-.menu-icono{
+.menu-icono {
     width: 25px;
-
 }
 
-.menu label{
+.menu label {
     cursor: pointer;
-    display: none;
+    display: none; /* Ocultar por defecto */
 }
 
-@media(max-width: 991px ){
-    .saludo{
+@media(max-width: 991px) {
+    .saludo {
         font-size: 16px;
         text-align: center;
-    
-
-
     }
-    .logo{
+
+    .logo {
         width: 130px;
-        margin-left: 13px;
+        margin-left: 0; /* Ajustado para centrado */
     }
 
-    #logout{
+    #logout {
         cursor: pointer;
         border: 1px solid rgba(240, 248, 255, 0);
         border-radius: 50px;
         color: red;
         background-color: rgba(240, 248, 255, 0);
     }
-    
-    #logout:hover{
+
+    #logout:hover {
         color: rgb(236, 100, 100);
-        background-color: rgba(240, 248, 255, 0);
     }
 
-    .menu{
+    .menu {
         padding: 20px;
         background: #80b15500;
+        flex-direction: column; /* Cambiado a columna en móviles */
+        align-items: flex-start; /* Alinear a la izquierda */
     }
-    .menu label{
-        display: initial;
+
+    .menu label {
+        display: block; /* Mostrar en dispositivos móviles */
     }
-    .menu .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
+
+    .menu .navbar {
+        position: static; /* Cambiar a static para mejor control */
         background-color: black;
-        display: none;
-        
+        display: none; /* Ocultar por defecto */
+        width: 100%; /* Asegurar que ocupe todo el ancho */
     }
-    .menu .navbar ul li{
-        width: 100%;
+
+    .menu .navbar ul {
+        flex-direction: column; /* Cambiar a columna */
+        width: 100%; /* Asegurar que ocupe todo el ancho */
+    }
+
+    .menu .navbar ul li {
+        width: 100%; /* Asegurar que ocupe todo el ancho */
         margin-bottom: 5px;
+        text-align: center; /* Centrar el texto */
     }
 
-    .mennu .navbar ul li a:hover{
+    .menu .navbar ul li a {
+        margin-right: 0; /* Eliminar margen derecho en móviles */
+    }
+
+    .menu .navbar ul li a:hover {
         color: brown;
-
-    }
-    #menu:checked~ .navbar{
-        display: initial;
     }
 
-    
-
+    #menu:checked ~ .navbar {
+        display: block; /* Mostrar el menú cuando está marcado */
+    }
 }
 
 

@@ -1,7 +1,7 @@
 
 .reviews-section {
-    max-width: 800px;
-    margin: auto;
+    max-width: 90%; /* Cambia el ancho máximo a un porcentaje para adaptarse a pantallas pequeñas */
+    margin: 20px auto; /* Añade un margen superior e inferior */
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -12,17 +12,39 @@
     border-bottom: 1px solid #eee;
     padding: 15px 0;
 }
+
 .review:last-child {
     border-bottom: none;
 }
+
 .review p {
     margin: 5px 0;
     color: #555;
 }
+
 .review .customer-name {
     font-weight: bold;
     color: #333;
 }
+
 .review .rating {
     color: #f39c12; /* Color para las estrellas */
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 600px) {
+    .reviews-section {
+        max-width: 800px; /* Restaura el ancho máximo en pantallas más grandes */
+    }
+
+    .review {
+        display: flex; /* Usa flexbox para alinear elementos en pantallas más grandes */
+        justify-content: space-between; /* Espacia los elementos */
+        align-items: center; /* Centra verticalmente */
+    }
+
+    .review p {
+        flex: 1; /* Permite que el párrafo ocupe el espacio disponible */
+        margin: 0 10px; /* Añade margen entre los elementos */
+    }
 }

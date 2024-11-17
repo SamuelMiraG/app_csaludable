@@ -24,7 +24,7 @@
 }
 
 .cont-header{
-    margin-top: 200px;
+    margin-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -75,6 +75,12 @@
     margin-right: 225px;
     width: 550px;
     align-content: center;
+}
+
+.desde{
+    font-size: 20px;
+    color: #496943;
+    font-weight: 600;
 }
 
 @media(max-width: 991px) {

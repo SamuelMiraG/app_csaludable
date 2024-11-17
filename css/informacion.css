@@ -11,8 +11,8 @@
 }
 
 .info-img img{
-    width: 500px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
 }
 
 .info-text{
@@ -25,4 +25,40 @@
     text-transform: uppercase;
     font-weight: 800;
     text-shadow: 0 0 10px #ffffff63;
+}
+
+.info-text p{
+    font-weight: 600;
+    padding: 5px;
+    
+}
+
+
+@media(max-width: 991px) {
+    .info{
+        padding: 30px;
+        flex-direction: column;
+    }
+    .info-img{
+        width: 100%;
+        text-align: center;
+    }
+    .info-img img{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    .info-text{
+        
+        width: 100%;
+        text-align: center;
+    }
+    .info-text h2{
+        font-size: 50px;
+    }
+    .info-text p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
 }

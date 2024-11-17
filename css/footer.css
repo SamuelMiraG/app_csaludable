@@ -24,3 +24,21 @@
     margin-bottom: 5px;
     display: inline-block;
 }
+
+
+
+@media(max-width: 991px){
+    .footer-conatiner{
+        padding: 36px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logof{
+        display: flex;
+        justify-content: center;
+    }
+    .links h4{
+        margin: 25px 0px 10px 0px;
+    }
+}
