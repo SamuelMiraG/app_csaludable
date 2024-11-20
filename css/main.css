@@ -56,7 +56,7 @@
 
 .box-container-1,
 .box-container-2,
-.box-container-3 { /* Cambié box-container-1 a box-container-3 */
+.box-container-3 { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -81,7 +81,7 @@
 .box-1:nth-child(2),
 .box-1:nth-child(3),
 .box-1:nth-child(4) {
-    display: inline-block; /* Corregido de inline-2lock a inline-block */
+    display: inline-block; 
 }
 
 .box-2:nth-child(1),

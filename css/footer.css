@@ -2,14 +2,10 @@
     padding: 100px 0px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: -70px;
     
-    
-   
-    
-    
-    
-    
-    
+  
+
 }
 
 .links h4 {
@@ -18,11 +14,30 @@
     font-size: 18px;
 }
 
-.links ul li a {
-    color: aliceblue;
+.links ul li {
+    color: rgb(82, 143, 80);
     font-size: 16px;
     margin-bottom: 5px;
-    display: inline-block;
+    display: block;
+    
+    
+   
+}
+
+
+
+
+.links a:hover{
+    color: #6e8858;
+}
+
+.copy{
+        
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #60883e;
+    
 }
 
 
@@ -34,6 +49,16 @@
         text-align: center;
     }
 
+    .copy{
+        
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #60883e;
+        margin-top: 50px;
+        
+    }
+
     .logof{
         display: flex;
         justify-content: center;
@@ -41,4 +66,11 @@
     .links h4{
         margin: 25px 0px 10px 0px;
     }
+    .copy{
+        
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }

@@ -1,6 +1,6 @@
 const logoutButton = document.getElementById('logout');
 
-const user = JSON.parse(sessionStorage.getItem('login_success')) || false; 
+const user = JSON.parse(localStorage.getItem('login_success')) || false; 
 if (user) {
     logoutButton.style.display = 'block'; 
 } else {
@@ -9,7 +9,7 @@ if (user) {
 
 logoutButton.addEventListener('click', () => {
     alert('Hasta pronto');
-    sessionStorage.removeItem('login_success'); 
+    localStorage.removeItem('login_success'); 
     window.location.href = 'index.html';
 });
 
@@ -25,13 +25,12 @@ if (user) {
 }
 
 
-
 window.addEventListener('load', () => {
     const mensaje = document.querySelector('#mensaje');
-    const username  = JSON.parse(sessionStorage.getItem('login_success'));
+    const username = JSON.parse(localStorage.getItem('login_success')); 
 
-    if (username ) {
-        mensaje.textContent = `¡Bienvenido! ${username .name}`;
+    if (username) {
+        mensaje.textContent = `¡Bienvenido! ${username.name}`;
     }
 });
 

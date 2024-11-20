@@ -1,50 +1,51 @@
 
-.reviews-section {
-    max-width: 90%; /* Cambia el ancho máximo a un porcentaje para adaptarse a pantallas pequeñas */
-    margin: 20px auto; /* Añade un margen superior e inferior */
+.reseñas-container {
+    max-width: 90%; 
+    margin: 20px auto; 
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.review {
+.reseña {
     border-bottom: 1px solid #eee;
     padding: 15px 0;
 }
 
-.review:last-child {
+.reseña:last-child {
     border-bottom: none;
 }
 
-.review p {
+.reseña p {
     margin: 5px 0;
     color: #555;
+    text-align: center;
 }
 
-.review .customer-name {
+.reseña .nombre-re {
     font-weight: bold;
     color: #333;
 }
 
-.review .rating {
-    color: #f39c12; /* Color para las estrellas */
+.reseña .estrellas {
+    color: #f39c12; 
 }
 
-/* Media Queries para pantallas más grandes */
+
 @media (min-width: 600px) {
-    .reviews-section {
-        max-width: 800px; /* Restaura el ancho máximo en pantallas más grandes */
+    .reseñas-container {
+        max-width: 800px; 
     }
 
-    .review {
-        display: flex; /* Usa flexbox para alinear elementos en pantallas más grandes */
-        justify-content: space-between; /* Espacia los elementos */
-        align-items: center; /* Centra verticalmente */
+    .reseña {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
     }
 
-    .review p {
-        flex: 1; /* Permite que el párrafo ocupe el espacio disponible */
-        margin: 0 10px; /* Añade margen entre los elementos */
+    .reseña p {
+        flex: 1; 
+        margin: 0 10px; 
     }
 }

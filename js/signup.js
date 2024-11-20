@@ -7,7 +7,7 @@ signupForm.addEventListener('submit', (e) => {
     const lastname = document.querySelector('#lastname').value; 
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
-    const Users = JSON.parse(sessionStorage.getItem('users')) || []; 
+    const Users = JSON.parse(localStorage.getItem('users')) || []; 
     const isUserRegistered = Users.find(user => user.email === email);
     
     if (isUserRegistered) {
@@ -15,7 +15,7 @@ signupForm.addEventListener('submit', (e) => {
     }
 
     Users.push({ name: name, lastname: lastname, email: email, password: password });
-    sessionStorage.setItem('users', JSON.stringify(Users)); 
+    localStorage.setItem('users', JSON.stringify(Users)); 
 
     alert('Registro Exitoso!');
     window.location.href = 'login.html';
