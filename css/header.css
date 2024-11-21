@@ -151,7 +151,7 @@
     }
 
     .menu .navbar ul li a:hover {
-        color: brown;
+        color: rgb(75, 161, 4);
     }
 
     #menu:checked ~ .navbar {
